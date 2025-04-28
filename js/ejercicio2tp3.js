@@ -40,4 +40,22 @@ document.writeln(`<ul>`);
 document.writeln(`<li>Elemento ultima posicion: ${ciudades[ciudades.length - 1]}</li>`)
 document.writeln(`</ul>`);
 
+//Escribir por pantalla el elemento de la seguna posicion y sustituir por la ciudad barcelona
+
+ciudades[1] = 'Barcelona';
+
+document.writeln(`<ul>`);
+document.writeln(`<li>Elemento segunda posicion: ${ciudades[1]}</li>`);
+document.writeln(`</ul>`);
+
+
+//mostrar un ul del array de ciudades
+
+document.writeln('<h2>Arreglo de ciudades</h2>')
+
+document.writeln(`<ul>`);
+for(let i=0; i < ciudades.length; i++){
+document.writeln(`<li>Elemento 1er posicion: ${ciudades[i]}</li>`);
+}
+document.writeln(`</ul>`);
 
