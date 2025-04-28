@@ -31,3 +31,13 @@ document.writeln(`<li>Elemento 1er posicion: ${ciudades[0]}</li>
     <li>Elemento 3er posicion: ${ciudades[2]}</li>
     <li>Elemento ultima posicion: ${ciudades[9]}</li>`);
 document.writeln(`</ul>`);
+
+//Añadir en la ultima posicion del array la ciudad Paris
+
+ciudades.push('Paris')
+
+document.writeln(`<ul>`);
+document.writeln(`<li>Elemento ultima posicion: ${ciudades[ciudades.length - 1]}</li>`)
+document.writeln(`</ul>`);
+
+
