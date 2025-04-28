@@ -1,0 +1,33 @@
+/*2-  Crear un script que solicite al usuario mediante un prompt el nombre de ciudades y almacenarlas en un arreglo, cuando el usuario selecciona cancelar se debe mostrar el arreglo generado, luego realizar las siguientes acciones: 
+
+Mostrar la longitud del arreglo.
+Mostrar en el documento web los ítems de las posiciones primera, tercera y última.
+Añade en última posición la ciudad de París.
+Escribe por pantalla el elemento que ocupa la segunda posición.
+Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
+*/
+
+//Script que solicita al usuario ingresar una ciudad
+const ciudades = [];
+
+while (true) {
+  let indiceCiudades = prompt(
+    "Escribe el nombre de una ciudad. Para finalizar presiona cancelar"
+  );
+  if (indiceCiudades === null) {
+    break;
+  }
+  ciudades.push(indiceCiudades);
+}
+
+//Mostrar la longitud del array
+
+document.writeln(`El array tiene ${ciudades.length} elementos`);
+
+//Mostrar los items de las posiciones primera, tercera y ultima
+
+document.writeln(`<ul>`);
+document.writeln(`<li>Elemento 1er posicion: ${ciudades[0]}</li>
+    <li>Elemento 3er posicion: ${ciudades[2]}</li>
+    <li>Elemento ultima posicion: ${ciudades[9]}</li>`);
+document.writeln(`</ul>`);
