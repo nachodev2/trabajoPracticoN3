@@ -55,7 +55,7 @@ document.writeln('<h2>Arreglo de ciudades</h2>')
 
 document.writeln(`<ul>`);
 for(let i=0; i < ciudades.length; i++){
-document.writeln(`<li>Elemento 1er posicion: ${ciudades[i]}</li>`);
+document.writeln(`<li>Elemento: ${ciudades[i]}</li>`);
 }
 document.writeln(`</ul>`);
 
